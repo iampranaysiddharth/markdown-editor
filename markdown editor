@@ -1,0 +1,7 @@
+<textarea id="editor"></textarea>
+<div id="preview"></div>
+<script>
+document.getElementById("editor").addEventListener("input", function() {
+    document.getElementById("preview").innerHTML = this.value.replace(/\n/g, "<br>");
+});
+</script>
